@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+
+    <style>
+        html {
+            font-family: Consolas, Menlo, Monaco, Lucida Console,
+                Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serifn !important;
+        }
+
+        html {
+            overflow-y: auto
+        }
+
+        div {
+            font-family: Consolas, Menlo, Monaco, Lucida Console,
+                Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serifn !important;
+        }
+
+        .grd {
+            background: -webkit-linear-gradient(rgb(58, 127, 255), rgb(79, 15, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grd-1 {
+            background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(0, 0, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <div id="app">
+        <v-app style="padding-bottom: 30rem;">
+            <v-app-bar app flat
+                style="background-color: #121212; border-bottom: 1px; border-bottom-color: #414141; border-bottom-style: solid;">
+
+                <v-img class="mx-2" src="./DotPatch_SMALL.png" max-height="35" max-width="35" contain></v-img>
+
+                <v-toolbar-title class="ml-2 mt-1">DotPatch</v-toolbar-title>
+
+                <v-spacer></v-spacer>
+
+                <v-btn text href="#">
+                    Home
+                </v-btn>
+                <!-- <v-btn text>
+                    Our Clients
+                </v-btn>
+                <v-btn text>
+                    Testemonials
+                </v-btn>
+                <v-btn text>
+                    About
+                </v-btn> -->
+                <v-btn text fab href="https://github.com/DotPatch">
+                    <span class="iconify" data-icon="mdi:github" style="height: 25px; width: 25px;"></span>
+                </v-btn>
+            </v-app-bar>
+            <v-main>
+                <v-container fluid>
+                    <v-row class="ml-6" style="margin-top: 8rem; font-size: 32px;">
+                        <v-col cols="12" md="8">
+                            <v-row>
+                                <h1 class="grd">DotPatch - Remove the hustle from updating software</h1>
+                            </v-row>
+                            <v-row style="margin-top: 2rem;">
+                                <v-col>
+                                    <v-btn text x-large primary outlined color="primary" href="https://github.com/DotPatch">
+                                        Learn More
+                                    </v-btn>
+                                </v-col>
+                            </v-row>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <v-img class="mx-2" src="./Banner.png" contain min-height="400" min-width="400"></v-img>
+                        </v-col>
+                    </v-row>
+
+                    <v-divider style="margin-top: 5rem;"></v-divider>
+
+                    <v-row class="mt-10 ml-6">
+                        <v-col>
+                            <h1 class="grd-1" style="font-size: 50px;">Some of our features</h1>
+                        </v-col>
+                    </v-row>
+                    <v-row class="mt-1 ml-3 mr-3">
+                        <v-col cols="12" md="6" lg="4">
+                            <v-card block class="pa-4" flat
+                                style="background-color: #121212; border: 1px; border-color: #414141; border-style: solid;">
+
+                                <div style="width: 100%;" class="d-flex justify-center">
+                                    <span class="iconify" data-icon="gridicons:computer"
+                                        style="height: 100px; width: 100px;"></span>
+                                </div>
+
+                                <div style="width: 100%;" class="d-flex justify-center mt-2">
+                                    <span style="font-weight: 600; font-size: 30px;">Machine Grouping</span>
+                                </div>
+
+                                <!-- <v-divider style="margin-top: 1rem;margin-bottom: 1rem; width: 100%;"></v-divider>
+
+                                <div style="width: 100%;" class="d-flex justify-center mt-2">
+                                    <span style="font-size: 15px; color:gray;">Machine Grouping</span>
+
+
+                                </div> -->
+
+                            </v-card>
+                        </v-col>
+                        <v-col cols="12" md="6" lg="4">
+                            <v-card block class="pa-4" flat
+                                style="background-color: #121212; border: 1px; border-color: #414141; border-style: solid;">
+
+                                <div style="width: 100%;" class="d-flex justify-center">
+                                    <span class="iconify grd" data-icon="healthicons:i-schedule-school-date-time-outline"
+                                        style="height: 100px; width: 100px;"></span>
+                                </div>
+
+                                <div style="width: 100%;" class="d-flex justify-center mt-2">
+                                    <span style="font-weight: 600; font-size: 30px;">Comming Soon...</span>
+                                </div>
+
+                            </v-card>
+                        </v-col>
+                        <v-col cols="12" md="6" lg="4">
+                            <v-card block class="pa-4" flat
+                                style="background-color: #121212; border: 1px; border-color: #414141; border-style: solid;">
+
+                                <div style="width: 100%;" class="d-flex justify-center">
+                                    <span class="iconify grd" data-icon="healthicons:i-schedule-school-date-time-outline"
+                                        style="height: 100px; width: 100px;"></span>
+                                </div>
+
+                                <div style="width: 100%;" class="d-flex justify-center mt-2">
+                                    <span style="font-weight: 600; font-size: 30px;">Comming Soon...</span>
+                                </div>
+
+                            </v-card>
+                        </v-col>
+                    </v-row>
+
+                </v-container>
+            </v-main>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify({
+                theme: { dark: true },
+            }),
+        })
+    </script>
+</body>
+
+</html>
